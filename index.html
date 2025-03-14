@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>English Janala</title>
         <!--? 🌟🌟Google Font CDN🌟🌟 -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
         <!--? 🌟🌟DaisyUI CDN🌟🌟 -->
         <link
             href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -13,22 +18,115 @@
             type="text/css"
         />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!--? 🌟🌟Font Awesome CDN🌟🌟 -->
+        <script
+            src="https://kit.fontawesome.com/09275bb6c5.js"
+            crossorigin="anonymous"
+        ></script>
         <!--? 🌟🌟FavIcon🌟🌟 -->
-        <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
         <!--? 🌟🌟Custom CSS🌟🌟 -->
         <style>
-            .default-font {
+            .english-font {
+                font-family: "Poppins", sans-serif;
+            }
+            .bangla-font {
+                font-family: "Hind Siliguri", sans-serif;
             }
         </style>
     </head>
-    <body class="default-font">
-        <!--? 🌟🌟 <==> Header and Main Section <==> 🌟🌟 -->
-        <section class="max-w-screen-2xl mx-auto">
-            <header class="w-11/12 mx-auto"></header>
-            <main class="w-11/12 mx-auto"></main>
-        </section>
+    <body class="english-font">
+        <!--? 🌟🌟 <==> Navbar <==> 🌟🌟 -->
+        <nav class="cursor-pointer max-w-screen-2xl relative">
+            <div class="navbar shadow-md backdrop-blur-sm px-8 top-0 fixed">
+                <div class="navbar-start">
+                    <a class="flex items-center" href="./index.html">
+                        <span class="font-bold text-lg">English</span>
+                        <img class="w-8" src="./assets/logo.png" alt="" />
+                        <span class="bangla-font text-lg font-bold"
+                            >জানালা</span
+                        >
+                    </a>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <button
+                        class="btn btn-outline btn-primary border-2 shadow-md"
+                    >
+                        <span class="hover:text-white">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </span>
+                        FAQ
+                    </button>
+                    <button
+                        class="btn btn-outline btn-primary border-2 shadow-md"
+                    >
+                        <span class="hover:text-white">
+                            <i class="fa-solid fa-book-open"></i>
+                        </span>
+                        Learn
+                    </button>
+                    <button
+                        class="btn btn-outline btn-primary border-2 shadow-md"
+                    >
+                        <span class="hover:text-white">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </span>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main class="max-w-screen-2xl mx-auto">
+            <!--? 🌟🌟 <==> Banner <==> 🌟🌟 -->
+            <section
+                class="w-11/12 mx-auto flex justify-between items-center mt-16"
+            >
+                <div class="w-3/5 space-y-5">
+                    <div>
+                        <span class="text-3xl font-bold text-sky-400"
+                            >English</span
+                        ><span class="text-3xl font-bold"> is Easy!!</span>
+                    </div>
+                    <div>
+                        <p class="bangla-font text-lg font-medium">
+                            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি
+                            নতুন হন
+                            <br />
+                            অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive
+                            Lessons
+                            <br />
+                            আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                        </p>
+                    </div>
+                    <div class="space-y-4 flex flex-col">
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Enter Your Name"
+                            class="input"
+                        />
+                        <input
+                            id="loginCode"
+                            type="password"
+                            placeholder="Enter Login code (123456)"
+                            class="input"
+                        />
+                        <div>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/hero-student.png" alt="" />
+                </div>
+            </section>
+        </main>
         <!--? 🌟🌟 <==> Footer Section <==> 🌟🌟 -->
-        <footer class="">
+        <footer class="max-w-screen-2xl mx-auto">
             <section class="w-11/12 mx-auto"></section>
         </footer>
         <script src="./scripts/utilities.js"></script>
