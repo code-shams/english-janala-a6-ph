@@ -149,20 +149,16 @@
                 <div
                     id="lesson-btn-container"
                     class="flex justify-center gap-3"
-                >
-                    <button class="btn btn-sm btn-outline btn-primary">
-                        <span class="hover:text-white">
-                            <i class="fa-solid fa-book-open"></i>
-                        </span>
-                        <span class="text-sm">Lesson -1</span>
-                    </button>
-                </div>
+                ></div>
                 <!-- *Lesson Contents* -->
-                <div class="bg-[#F8F8F8] rounded-xl p-8 mt-7"></div>
+                <div
+                    id="lesson-container"
+                    class="bg-[#F8F8F8] rounded-xl p-6 mt-7 grid grid-cols-3 gap-4"
+                ></div>
             </section>
             <!--? 🌟🌟 <==> FAQ <==> 🌟🌟 -->
-            <section id="faq-sec" class="w-11/12 mx-auto space-y-3 py-24">
-                <h2 class="text-center mb-7">
+            <section id="faq-sec" class="w-11/12 mx-auto space-y-3 pb-24 pt-20">
+                <h2 class="text-center mb-12">
                     <span class="font-bold text-sky-400 text-2xl"
                         >Frequently </span
                     ><span class="font-bold text-2xl">Asked Questions</span>
@@ -226,9 +222,9 @@
             </section>
         </main>
         <!--? 🌟🌟 <==> Footer Section <==> 🌟🌟 -->
-        <footer class="max-w-screen-2xl mx-auto border-sky-500 border-t-1">
+        <footer class="max-w-screen-2xl mx-auto border-[#ffebeb] border-t-3">
             <section
-                class="w-11/12 mx-auto flex justify-between items-center py-20"
+                class="w-11/12 mx-auto flex justify-between items-center py-16"
             >
                 <div>
                     <div class="flex items-center">
@@ -263,6 +259,8 @@
             </section>
         </footer>
         <script src="./scripts/utilities.js"></script>
-        <script src="./scripts/"></script>
+        <script src="./scripts/lessonBtn.js"></script>
+        <script src="./scripts/lessonBtnEvent.js"></script>
+        <script src="./scripts/lessonContents.js"></script>
     </body>
 </html>
