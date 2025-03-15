@@ -66,10 +66,6 @@ const getLessonData = async (id) => {
         </div>
         `;
     });
-    const lessonBtns = document.getElementsByClassName("lessonBtn");
-    for (const btn of lessonBtns) {
-        btn.classList.add();
-    }
 };
 
 displayLessonContents();
