@@ -3,6 +3,7 @@ const allLevelsUrl = `${mainUrl}levels/all`;
 const displayLessonBtn = async () => {
     const data = await fetchData(allLevelsUrl);
     const lessonBtnContainer = document.getElementById("lesson-btn-container");
+    lessonBtnContainer.innerHTML = "";
     for (let i = 1; i <= data.data.length; i++) {
         lessonBtnContainer.innerHTML += `
         <div>

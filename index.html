@@ -44,7 +44,7 @@
     </head>
     <body class="english-font">
         <!--? 🌟🌟 <==> Navbar <==> 🌟🌟 -->
-        <nav class="max-w-screen-2xl relative z-50">
+        <nav class="max-w-screen-2xl relative z-50 inactive hidden">
             <div
                 class="navbar shadow-md backdrop-blur-xl px-8 top-0 fixed border-sky-500 border-b-2"
             >
@@ -79,6 +79,7 @@
                         </button>
                     </a>
                     <button
+                        id="logoutBtn"
                         class="btn btn-outline btn-primary border-2 shadow-md"
                     >
                         <span class="hover:text-white">
@@ -92,6 +93,7 @@
         <main class="max-w-screen-2xl mx-auto">
             <!--? 🌟🌟 <==> Banner <==> 🌟🌟 -->
             <section
+                id="banner-sec"
                 class="w-11/12 mx-auto flex justify-between items-center mt-16"
             >
                 <div class="w-3/5 space-y-5">
@@ -119,13 +121,13 @@
                             class="input"
                         />
                         <input
-                            id="loginCode"
+                            id="logincode"
                             type="password"
                             placeholder="Enter Login code (123456)"
                             class="input"
                         />
                         <div>
-                            <button class="btn btn-primary">Get Started</button>
+                            <button id="logInBtn" class="btn btn-primary">Get Started</button>
                         </div>
                     </div>
                 </div>
@@ -134,7 +136,7 @@
                 </div>
             </section>
             <!--? 🌟🌟 <==> Learn <==> 🌟🌟 -->
-            <section id="learn-sec" class="w-11/12 mx-auto py-24">
+            <section id="learn-sec" class="w-11/12 mx-auto py-24 inactive hidden">
                 <!-- *title text* -->
                 <div>
                     <h2 class="text-center mb-7">
@@ -157,7 +159,7 @@
                 ></div>
             </section>
             <!--? 🌟🌟 <==> FAQ <==> 🌟🌟 -->
-            <section id="faq-sec" class="w-11/12 mx-auto space-y-3 pb-24 pt-20">
+            <section id="faq-sec" class="w-11/12 mx-auto space-y-3 pb-24 pt-20 inactive hidden">
                 <h2 class="text-center mb-12">
                     <span class="font-bold text-sky-400 text-2xl"
                         >Frequently </span
@@ -259,6 +261,7 @@
             </section>
         </footer>
         <script src="./scripts/utilities.js"></script>
+        <script src="./scripts/login.js"></script>
         <script src="./scripts/lessonBtn.js"></script>
         <script src="./scripts/lessonBtnEvent.js"></script>
         <script src="./scripts/lessonContents.js"></script>

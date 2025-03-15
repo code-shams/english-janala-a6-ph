@@ -15,3 +15,21 @@ const handleLessonBtnEvent = (id) => {
     getLessonData(id);
     toggleActiveStatus(id);
 };
+
+// ? Handles log in
+const handleLogin = () => {
+    for (const section of inactive) {
+        section.classList.remove("hidden");
+    }
+    document.getElementById("banner-sec").classList.add("hidden");
+
+};
+// ? Handles Log out
+const handleLogout = () => {
+    for (const section of inactive) {
+        section.classList.add("hidden");
+    }
+    document.getElementById("banner-sec").classList.remove("hidden");
+    name.value = "";
+    password.value = "";
+};
