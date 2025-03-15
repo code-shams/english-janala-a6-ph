@@ -13,6 +13,11 @@ const displayLessonContents = async () => {
 displayLessonContents();
 // ? Displays dynamic data when each lesson button is clicked. Creates a 3 column grid card layout.
 const getLessonData = async (id) => {
+    lessonContainer.innerHTML = `
+    <div class="text-center col-span-full">
+        <span class="loading loading-dots loading-md col-span-full"></span>
+    </div>
+    `;
     const lessonData = await fetchData(`${lessonUrl}${id}`);
     lessonContainer.innerHTML = "";
     if (!lessonData.data.length) {
