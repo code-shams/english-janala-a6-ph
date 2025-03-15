@@ -56,7 +56,7 @@ const getLessonData = async (id) => {
                 </h2>
             </div>
             <!-- Button Container -->
-            <div class="flex justify-between w-full mt-14">
+            <div class="flex justify-between w-full pt-14 mt-auto">
                 <button
                     onclick = 'handleInfoBtn(${element.id})'
                     class="p-3 rounded-xl bg-[#1A91FF1A] cursor-pointer info-btn"
