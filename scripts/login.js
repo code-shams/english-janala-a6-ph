@@ -9,13 +9,22 @@ logInBtn.addEventListener("click", function () {
             if (password.value === "123456") {
                 handleLogin();
             } else {
-                alert("Wrong Password. Contact admin to get your Login Code.");
+                Swal.fire({
+                    icon: "error",
+                    text: "Wrong Password. Contact admin to get your Login Code.",
+                });
             }
         } else {
-            alert("Wrong Password. Contact admin to get your Login Code.");
+            Swal.fire({
+                icon: "error",
+                text: "Wrong Password. Contact admin to get your Login Code.",
+            });
         }
     } else {
-        alert("Please tell your name first");
+        Swal.fire({
+            icon: "error",
+            text: "Please tell your name first",
+        });
     }
 });
 

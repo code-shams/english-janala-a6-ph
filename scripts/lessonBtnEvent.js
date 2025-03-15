@@ -22,7 +22,11 @@ const handleLogin = () => {
         section.classList.remove("hidden");
     }
     document.getElementById("banner-sec").classList.add("hidden");
-
+    Swal.fire({
+        title: "অভিনন্দন",
+        text: "চলুন আজ নতুন কিছু শেখা যাক",
+        icon: "success",
+    });
 };
 // ? Handles Log out
 const handleLogout = () => {

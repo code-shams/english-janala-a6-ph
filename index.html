@@ -29,6 +29,8 @@
             href="./assets/logo.png"
             type="image/x-icon"
         />
+        <!--? 🌟🌟Sweet Alert  CDN🌟🌟 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!--? 🌟🌟Custom CSS🌟🌟 -->
         <style>
             .english-font {
@@ -127,7 +129,9 @@
                             class="input"
                         />
                         <div>
-                            <button id="logInBtn" class="btn btn-primary">Get Started</button>
+                            <button id="logInBtn" class="btn btn-primary">
+                                Get Started
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +140,10 @@
                 </div>
             </section>
             <!--? 🌟🌟 <==> Learn <==> 🌟🌟 -->
-            <section id="learn-sec" class="w-11/12 mx-auto py-24 inactive hidden">
+            <section
+                id="learn-sec"
+                class="w-11/12 mx-auto py-24 inactive hidden"
+            >
                 <!-- *title text* -->
                 <div>
                     <h2 class="text-center mb-7">
@@ -157,9 +164,15 @@
                     id="lesson-container"
                     class="bg-[#F8F8F8] rounded-xl p-6 mt-7 grid grid-cols-3 gap-4"
                 ></div>
+                <!-- *Modal -->
+                <!-- Open the modal using ID.showModal() method -->
+                <dialog id="wordInfo" class="modal"></dialog>
             </section>
             <!--? 🌟🌟 <==> FAQ <==> 🌟🌟 -->
-            <section id="faq-sec" class="w-11/12 mx-auto space-y-3 pb-24 pt-20 inactive hidden">
+            <section
+                id="faq-sec"
+                class="w-11/12 mx-auto space-y-3 pb-24 pt-20 inactive hidden"
+            >
                 <h2 class="text-center mb-12">
                     <span class="font-bold text-sky-400 text-2xl"
                         >Frequently </span
@@ -265,5 +278,6 @@
         <script src="./scripts/lessonBtn.js"></script>
         <script src="./scripts/lessonBtnEvent.js"></script>
         <script src="./scripts/lessonContents.js"></script>
+        <script src="./scripts/wordInfo.js"></script>
     </body>
 </html>

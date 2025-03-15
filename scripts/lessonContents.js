@@ -36,6 +36,10 @@ const getLessonData = async (id) => {
         return;
     }
     lessonData.data.forEach((element) => {
+        let meaning = element.meaning;
+        if (meaning === null) {
+            meaning = "অর্থ নেই";
+        }
         lessonContainer.innerHTML += `
         <!-- *Vocabulary Card -->
         <div
@@ -48,13 +52,14 @@ const getLessonData = async (id) => {
                     Meaning / Pronunciation
                 </p>
                 <h2 class="bangla-font text-xl font-semibold mt-3">
-                    "${element.meaning} / ${element.pronunciation}"
+                    "${meaning} / ${element.pronunciation}"
                 </h2>
             </div>
             <!-- Button Container -->
             <div class="flex justify-between w-full mt-14">
                 <button
-                    class="p-3 rounded-xl bg-[#1A91FF1A] cursor-pointer"
+                    onclick = 'handleInfoBtn(${element.id})'
+                    class="p-3 rounded-xl bg-[#1A91FF1A] cursor-pointer info-btn"
                 >
                     <img src="./assets/fi-sr-info.png" alt="" />
                 </button>
