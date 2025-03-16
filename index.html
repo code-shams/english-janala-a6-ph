@@ -46,7 +46,7 @@
     </head>
     <body class="english-font">
         <!--? 🌟🌟 <==> Navbar <==> 🌟🌟 -->
-        <nav class="max-w-screen-2xl relative z-50 inactive hidden">
+        <nav class="relative z-50 inactive hidden">
             <div
                 class="navbar shadow-md backdrop-blur-xl px-8 top-0 fixed border-gray-300 border-b-2"
             >
@@ -96,9 +96,9 @@
             <!--? 🌟🌟 <==> Banner <==> 🌟🌟 -->
             <section
                 id="banner-sec"
-                class="w-11/12 mx-auto flex justify-between items-center mt-16"
+                class="w-full px-3 md:w-11/12 mx-auto flex flex-col-reverse md:flex-row justify-between items-center mt-16"
             >
-                <div class="w-3/5 space-y-5">
+                <div class="w-full md:w-3/5 space-y-5">
                     <div>
                         <span class="text-3xl font-bold text-sky-400"
                             >English</span
@@ -325,10 +325,10 @@
             </section>
         </main>
         <!--? 🌟🌟 <==> Footer Section <==> 🌟🌟 -->
-        <footer class="border-[#ffebeb] border-t-3">
+        <footer class="border-[#ffebeb] border-t-3 mt-10">
             <section class="max-w-screen-2xl mx-auto">
                 <section
-                    class="w-11/12 mx-auto flex justify-between items-center py-16"
+                    class="w-full md:w-11/12 mx-auto md:flex justify-between items-center py-8 md:py-16 px-3 md:px-0 space-y-2 md:space-y-0"
                 >
                     <div>
                         <div class="flex items-center">
@@ -336,29 +336,45 @@
                             <img class="w-8" src="./assets/logo.png" alt="" />
                             <span class="bangla-font font-bold">জানালা</span>
                         </div>
-                        <p class="bangla-font font-semibold pt-3">
+                        <p
+                            class="bangla-font font-semibold pt-3 text-sm md:text-base"
+                        >
                             ইংরেজি শিখুন সহজে
                         </p>
-                        <p class="pt-1 text-sm">
+                        <p class="pt-1 text-xs md:text-sm">
                             Providing ED-Tech Applications since 2025
                         </p>
                     </div>
                     <div>
                         <div>
-                            <p class="text-gray-500 text-sm">FOLLOW US</p>
+                            <p class="text-gray-500 text-xs md:text-sm">
+                                FOLLOW US
+                            </p>
                         </div>
                         <div class="flex gap-3 items-center pt-1">
                             <a href="https://www.facebook.com/" target="_blank"
-                                ><img src="./assets/fb-thumb.png" alt=""
+                                ><img
+                                    class="w-4 md:w-auto"
+                                    src="./assets/fb-thumb.png"
+                                    alt=""
                             /></a>
                             <a href="https://www.instagram.com/" target="_blank"
-                                ><img src="./assets/instagram-thumb.png" alt=""
+                                ><img
+                                    class="w-4 md:w-auto"
+                                    src="./assets/instagram-thumb.png"
+                                    alt=""
                             /></a>
                             <a href="https://www.youtube.com/" target="_blank"
-                                ><img src="./assets/youtube-thumb.png" alt=""
+                                ><img
+                                    class="w-4 md:w-auto"
+                                    src="./assets/youtube-thumb.png"
+                                    alt=""
                             /></a>
                             <a href="https://www.github.com/" target="_blank"
-                                ><img src="./assets/github-thumb.png" alt=""
+                                ><img
+                                    class="w-4 md:w-auto"
+                                    src="./assets/github-thumb.png"
+                                    alt=""
                             /></a>
                         </div>
                     </div>
