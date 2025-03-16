@@ -171,7 +171,7 @@
             <!--? 🌟🌟 <==> FAQ <==> 🌟🌟 -->
             <section
                 id="faq-sec"
-                class="w-11/12 mx-auto space-y-3 pb-24 pt-20 inactive hidden"
+                class="w-11/12 mx-auto space-y-3 pb-24 pt-24 inactive hidden"
             >
                 <h2 class="text-center mb-12">
                     <span class="font-bold text-sky-400 text-2xl"
@@ -190,7 +190,27 @@
                     <div class="collapse-title font-semibold">
                         What is the difference between var, let, and const?
                     </div>
-                    <div class="collapse-content text-sm">Ans:</div>
+                    <div class="collapse-content">
+                        <ul class="space-y-3">
+                            <li class="text-sm">
+                                <strong>var</strong> : var is the old way of
+                                declaring a variable in JavaScript. Var is
+                                function scoped. It can be redeclared. It is not
+                                recommended anymore.
+                            </li>
+                            <li class="text-sm">
+                                <strong>let</strong> : let is the new way of
+                                declaring a variable is JavaScript. Let is block
+                                scoped. Unlike var, it cannot be redeclared
+                                within the same scope. But it can be updated.
+                            </li>
+                            <li class="text-sm">
+                                <strong>const</strong> : const is just like let.
+                                The only difference is that it is immutable.
+                                It's value cannot be reassigned.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- *Card2 -->
                 <div
@@ -201,7 +221,32 @@
                         What is the difference between map(), forEach(), and
                         filter()?
                     </div>
-                    <div class="collapse-content text-sm">Ans:</div>
+                    <div class="collapse-content text-sm">
+                        <ul class="space-y-3">
+                            <li class="text-sm">
+                                <strong>map()</strong>: This array method is
+                                used to create a new modified version of the
+                                array. The map() method always returns a new
+                                array with the modified elements, while the
+                                original array remains unchanged.
+                            </li>
+                            <li class="text-sm">
+                                <strong>forEach()</strong>: This array method
+                                Just loops through the array and performs an
+                                action on each element. It does not return
+                                anything.
+                            </li>
+                            <li class="text-sm">
+                                <strong>filter()</strong>: This array method
+                                returns a new filtered array. It checks if an
+                                element from the original array passes a certain
+                                condition. It creates a new array with the
+                                elements from the original array that passes the
+                                condition while the original array remains
+                                intact.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- *Card3 -->
                 <div
@@ -212,7 +257,25 @@
                         Explain arrow functions and how they are different from
                         regular functions?
                     </div>
-                    <div class="collapse-content text-sm">Ans:</div>
+                    <div class="collapse-content text-sm">
+                        <ul class="space-y-3">
+                            <li class="text-sm">
+                                <strong>Arrow Functions</strong>: A shorter way
+                                to write functions in JavaScript using the "=>"
+                                syntax. They are great for short, simple
+                                functions. They don't get hoisted if stored as a
+                                variable.
+                            </li>
+                            <li class="text-sm">
+                                <strong>Regular Functions</strong>: Obviously,
+                                the syntax is vastly different. "function"
+                                keyword is used to declare a regular function.
+                                Regular function declarations get hoisted. It's
+                                less concise and more suitable for
+                                object-oriented use cases.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- *Card4 -->
                 <div
@@ -222,7 +285,20 @@
                     <div class="collapse-title font-semibold">
                         How do JavaScript Promises work?
                     </div>
-                    <div class="collapse-content text-sm">Ans:</div>
+                    <div class="collapse-content">
+                        <p class="text-sm">
+                            A Promise is an object representing the eventual
+                            completion (or failure) of an asynchronous
+                            operation.<br /><strong
+                                >States of a Promise :</strong
+                            ><br />Pending: The operation is still ongoing.<br />Fulfilled:
+                            The operation completed successfully.<br />Rejected:
+                            The operation failed.<br />
+                            To handle a promise we can use ".then" chaining
+                            method or we can use async/await functional
+                            approach.
+                        </p>
+                    </div>
                 </div>
                 <!-- *Card5 -->
                 <div
@@ -232,7 +308,19 @@
                     <div class="collapse-title font-semibold">
                         How does closures work in JavaScript?
                     </div>
-                    <div class="collapse-content text-sm">Ans:</div>
+                    <div class="collapse-content">
+                        <p class="text-sm">
+                            A closure is created when a function is defined
+                            inside another function, allowing the inner function
+                            to access variables from the outer function, even
+                            after the outer function has finished executing. If
+                            the variables declared on the outer function are
+                            also used inside the inner function then a reference
+                            of those variable are stored inside the inner
+                            function. This allows the inner function to use or
+                            modify those variables whenever it is called.
+                        </p>
+                    </div>
                 </div>
             </section>
         </main>
