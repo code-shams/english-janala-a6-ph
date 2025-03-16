@@ -1,6 +1,5 @@
 const wordUrl = `${mainUrl}/word/`;
 const handleInfoBtn = async (id) => {
-    // const infoBtn = document.getElementsByClassName("info-btn");
     const data = await fetchData(`${wordUrl}${id}`);
     const wordInformationContainer = document.getElementById("wordInfo");
     let meaning = data.data.meaning;
@@ -60,21 +59,3 @@ const handleInfoBtn = async (id) => {
     }
     wordInformationContainer.showModal();
 };
-
-/* 
-"data": {
-"word": "Eager",
-"meaning": "আগ্রহী",
-"pronunciation": "ইগার",
-"level": 1,
-"sentence": "The kids were eager to open their gifts.",
-"points": 1,
-"partsOfSpeech": "adjective",
-"synonyms": [
-"enthusiastic",
-"excited",
-"keen"
-],
-"id": 5
-}
- */
